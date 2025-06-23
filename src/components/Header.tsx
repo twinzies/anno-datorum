@@ -1,3 +1,6 @@
+
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return <div className="pt-6">
       <header className="w-full bg-gray-900 border border-gray-700 shadow-lg">
@@ -15,18 +18,18 @@ const Header = () => {
             </div>
             <nav className="flex justify-center">
               <div className="flex space-x-8 py-2 bg-transparent">
-                <a href="/" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
+                <Link to="/" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
                   Home
-                </a>
-                <a href="/about" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
+                </Link>
+                <Link to="/about" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
                   About
-                </a>
-                <a href="/archive" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
+                </Link>
+                <Link to="/archive" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
                   Archive
-                </a>
-                <a href="/gallery" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
+                </Link>
+                <Link to="/gallery" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
                   Gallery
-                </a>
+                </Link>
               </div>
             </nav>
           </div>
