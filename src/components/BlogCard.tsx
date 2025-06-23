@@ -12,7 +12,7 @@ interface BlogCardProps {
 const BlogCard = ({ title, excerpt, date, readTime, featured = false }: BlogCardProps) => {
   return (
     <article className={`group cursor-pointer ${featured ? 'md:col-span-2' : ''}`}>
-      <div className="bg-gray-800 border border-gray-600 rounded-lg overflow-hidden hover:border-gray-500 transition-all duration-300 hover:shadow-lg">
+      <div className="bg-black border border-white/20 rounded-lg overflow-hidden hover:border-white/40 transition-all duration-300 hover:shadow-lg">
         <div className={`p-6 ${featured ? 'md:p-8' : ''}`}>
           <div className="flex items-center mb-3">
             <div className="flex items-center space-x-1 text-sm text-olive-500">
