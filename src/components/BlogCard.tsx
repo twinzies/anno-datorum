@@ -34,9 +34,9 @@ const BlogCard = ({ id, title, excerpt, date, readTime, featured = false }: Blog
         <div className="bg-black border border-white/20 rounded-lg overflow-hidden hover:border-white/40 transition-all duration-300 hover:shadow-lg">
           <div className={`p-6 ${featured ? 'md:p-8' : ''}`}>
             <div className="flex items-center mb-3">
-              <div className="flex items-center space-x-1 text-sm text-olive-500">
+              <div className="flex items-center space-x-1 text-sm text-yellow-600">
                 <Calendar className="h-4 w-4" />
-                <span className="text-olive-600 font-medium">{date}</span>
+                <span className="text-yellow-700 font-medium">{date}</span>
               </div>
             </div>
             
