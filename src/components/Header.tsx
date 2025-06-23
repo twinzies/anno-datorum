@@ -1,4 +1,3 @@
-
 const Header = () => {
   return <div className="pt-6">
       <header className="w-full bg-gray-900 border border-gray-700 shadow-lg">
@@ -11,9 +10,7 @@ const Header = () => {
                 </h1>
               </div>
               <div className="p-3 rounded-none rounded-none bg-transparent ">
-                <p className="text-sm leading-relaxed text-red-400">
-                  Modeling the collective experience in the era of information with AI
-                </p>
+                <p className="text-sm leading-relaxed text-red-400">The experiences of a modeler in the era of information.</p>
               </div>
             </div>
             <nav className="flex justify-center">
