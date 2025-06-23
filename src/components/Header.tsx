@@ -1,14 +1,12 @@
-
 import { Link } from "react-router-dom";
-
 const Header = () => {
   return <div className="pt-6">
-      <header className="w-full bg-gray-900 border border-gray-700 shadow-lg">
-        <div className="max-w-6xl mx-auto px-6 py-6 bg-neutral-200">
+      <header className="w-full border border-gray-700 shadow-lg bg-transparent">
+        <div className="max-w-6xl mx-auto px-6 py-6 bg-transparent">
           <div className="flex flex-col space-y-4">
             <div className="flex items-start space-x-6">
               <div className="flex flex-col">
-                <h1 className="font-bold font-inter text-4xl md:text-5xl text-black">
+                <h1 className="font-bold font-inter text-4xl md:text-5xl text-gray-200">
                   Anno Datorum
                 </h1>
               </div>
