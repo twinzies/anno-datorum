@@ -1,4 +1,3 @@
-
 const Header = () => {
   return (
     <div className="pt-6">
@@ -17,19 +16,19 @@ const Header = () => {
               <div className="flex space-x-8">
                 <a 
                   href="/" 
-                  className="text-gray-700 hover:text-black transition-colors font-medium text-lg"
+                  className="text-gray-700 hover:text-black transition-colors font-medium text-xl"
                 >
                   Home
                 </a>
                 <a 
                   href="/about" 
-                  className="text-gray-700 hover:text-black transition-colors font-medium text-lg"
+                  className="text-gray-700 hover:text-black transition-colors font-medium text-xl"
                 >
                   About
                 </a>
                 <a 
                   href="/archive" 
-                  className="text-gray-700 hover:text-black transition-colors font-medium text-lg"
+                  className="text-gray-700 hover:text-black transition-colors font-medium text-xl"
                 >
                   Archive
                 </a>
