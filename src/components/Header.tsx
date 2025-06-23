@@ -16,8 +16,12 @@ const Header = () => {
                 <p className="text-sm leading-relaxed text-red-400">Experiences of a modeler in the era of information.</p>
               </div>
             </div>
-            <nav className="flex justify-center">
-              <div className="flex space-x-8 py-2 bg-transparent">
+          </div>
+        </div>
+        <nav className="w-full bg-neutral-200">
+          <div className="max-w-6xl mx-auto px-6 py-4">
+            <div className="flex justify-center">
+              <div className="flex space-x-8">
                 <Link to="/" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
                   Home
                 </Link>
@@ -31,9 +35,9 @@ const Header = () => {
                   Gallery
                 </Link>
               </div>
-            </nav>
+            </div>
           </div>
-        </div>
+        </nav>
       </header>
     </div>;
 };
