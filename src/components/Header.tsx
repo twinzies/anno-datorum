@@ -10,7 +10,7 @@ const Header = () => {
                 </h1>
               </div>
               <div className="p-3 rounded-none rounded-none bg-transparent ">
-                <p className="text-sm leading-relaxed text-red-400">The experiences of a modeler in the era of information.</p>
+                <p className="text-sm leading-relaxed text-red-400">Experiences of a modeler in the era of information.</p>
               </div>
             </div>
             <nav className="flex justify-center">
