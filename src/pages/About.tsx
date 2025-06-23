@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,8 +15,7 @@ const About = () => {
       name: "",
       email: "",
       subject: "",
-      message: "",
-      correspondence: ""
+      message: ""
     }
   });
 
@@ -27,7 +25,7 @@ const About = () => {
     // Create mailto link with form data
     const subject = encodeURIComponent(data.subject || "Contact from Anno Datorum");
     const body = encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}\n\n${data.correspondence ? `Correspondence: ${data.correspondence}` : ''}`
+      `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
     );
     
     window.location.href = `mailto:dobrytara@gmail.com?subject=${subject}&body=${body}`;
@@ -152,24 +150,6 @@ const About = () => {
                       <Textarea 
                         placeholder="Your message..." 
                         className="bg-gray-800 border-gray-600 text-white min-h-[100px]" 
-                        {...field} 
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="correspondence"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-white">Correspondence (Optional)</FormLabel>
-                    <FormControl>
-                      <Input 
-                        placeholder="How would you like me to respond?" 
-                        className="bg-gray-800 border-gray-600 text-white" 
                         {...field} 
                       />
                     </FormControl>
