@@ -1,9 +1,9 @@
 
 const Header = () => {
   return (
-    <div className="pt-6 px-6">
-      <header className="max-w-4xl mx-auto bg-stone-100 rounded-lg border border-gray-300 shadow-sm">
-        <div className="px-6 py-4">
+    <div className="pt-6">
+      <header className="w-full bg-stone-100 border border-gray-300 shadow-sm">
+        <div className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <h1 className="text-2xl font-bold text-black font-inter">
@@ -31,8 +31,9 @@ const Header = () => {
               </a>
             </nav>
           </div>
-          <p className="mt-3 text-gray-700 text-base max-w-2xl">
-            A professional blog exploring ideas, insights, and observations on technology, design, and life.
+          <p className="mt-3 text-gray-700 text-base max-w-3xl">
+            Modeling the world - one observation at a time.<br />
+            Making sense of the collective information with artificial intelligence.
           </p>
         </div>
       </header>

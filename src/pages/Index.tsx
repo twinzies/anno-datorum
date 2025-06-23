@@ -11,7 +11,6 @@ const Index = () => {
       excerpt: "Exploring the fundamentals of creating compelling content that resonates with your audience. From structure to storytelling, discover the elements that make a blog post memorable and impactful.",
       date: "December 20, 2024",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1527576539890-dfa815648363?w=800&h=400&fit=crop&crop=center",
       featured: true
     },
     {
@@ -19,8 +18,7 @@ const Index = () => {
       title: "Minimalist Design Principles",
       excerpt: "Less is more: understanding how simplicity creates powerful user experiences and lasting impressions in our digital world.",
       date: "December 18, 2024",
-      readTime: "3 min read",
-      image: "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?w=600&h=300&fit=crop&crop=center"
+      readTime: "3 min read"
     },
     {
       id: 3,
@@ -34,8 +32,7 @@ const Index = () => {
       title: "The Future of Remote Work",
       excerpt: "How distributed teams are reshaping the workplace and what it means for productivity, creativity, and collaboration.",
       date: "December 12, 2024",
-      readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1452960962994-acf4fd70b632?w=600&h=300&fit=crop&crop=center"
+      readTime: "6 min read"
     },
     {
       id: 5,
@@ -61,10 +58,10 @@ const Index = () => {
       <Header />
       
       <main className="max-w-6xl mx-auto px-6 py-12">
-        {/* Featured Post */}
+        {/* Latest Post */}
         <section className="mb-16">
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-white mb-2">Featured Article</h2>
+            <h2 className="text-2xl font-bold text-white mb-2">Latest</h2>
             <div className="w-16 h-1 bg-white"></div>
           </div>
           <BlogCard {...featuredPost} />
@@ -108,10 +105,10 @@ const Index = () => {
         <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <span className="text-lg font-bold text-white">Annodatorum</span>
+              <span className="text-lg font-bold text-white">Anno Datorum</span>
             </div>
             <div className="text-gray-400 text-sm">
-              © 2024 Annodatorum. All rights reserved.
+              © 2024 Anno Datorum. All rights reserved.
             </div>
           </div>
         </div>

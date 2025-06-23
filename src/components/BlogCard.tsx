@@ -6,24 +6,13 @@ interface BlogCardProps {
   excerpt: string;
   date: string;
   readTime: string;
-  image?: string;
   featured?: boolean;
 }
 
-const BlogCard = ({ title, excerpt, date, readTime, image, featured = false }: BlogCardProps) => {
+const BlogCard = ({ title, excerpt, date, readTime, featured = false }: BlogCardProps) => {
   return (
     <article className={`group cursor-pointer ${featured ? 'md:col-span-2' : ''}`}>
       <div className="bg-gray-900 border border-gray-700 rounded-lg overflow-hidden hover:border-gray-600 transition-all duration-300 hover:shadow-lg">
-        {image && (
-          <div className={`aspect-video overflow-hidden ${featured ? 'md:aspect-[2/1]' : ''}`}>
-            <img 
-              src={image} 
-              alt={title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-        )}
-        
         <div className={`p-6 ${featured ? 'md:p-8' : ''}`}>
           <div className="flex items-center space-x-4 text-sm text-gray-400 mb-3">
             <div className="flex items-center space-x-1">
