@@ -1,3 +1,4 @@
+
 const Header = () => {
   return (
     <div className="pt-6">
@@ -9,10 +10,10 @@ const Header = () => {
                 Anno Datorum
               </h1>
               <p className="mt-2 text-gray-700 text-sm max-w-xs leading-relaxed">
-                Modeling the collective experience with AI in the Age of Information.
+                Modeling the collective experience with AI in the era of information.
               </p>
             </div>
-            <nav className="flex-1 flex justify-center">
+            <nav className="flex-1 flex justify-center items-center">
               <div className="flex space-x-8">
                 <a 
                   href="/" 
