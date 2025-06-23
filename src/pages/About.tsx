@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
@@ -45,8 +45,8 @@ const About = () => {
           <h1 className="text-4xl font-bold text-white mb-8">About</h1>
           
           {/* Profile Section */}
-          <div className="flex flex-col items-center mb-8">
-            <Avatar className="w-32 h-32 mb-6">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 text-left">
+            <Avatar className="w-32 h-32 flex-shrink-0">
               <AvatarImage 
                 src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
                 alt="Profile" 
@@ -55,35 +55,15 @@ const About = () => {
               <AvatarFallback className="text-2xl bg-gray-700 text-white">TD</AvatarFallback>
             </Avatar>
             
-            <div className="text-center mb-6">
+            <div className="flex-1 md:text-left text-center">
               <p className="text-gray-300 text-lg mb-4">
                 Welcome to Anno Datorum - modeling the collective experience in the era of information with AI.
               </p>
-              <p className="text-gray-300 text-lg mb-6">
-                I'm passionate about exploring how artificial intelligence shapes our understanding of data and human experience.
+              <p className="text-gray-300 text-lg">
+                I'm passionate about exploring how artificial intelligence shapes our understanding of data and human experience. 
+                Get in touch via <a href="https://www.linkedin.com/in/girlenginerd/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">LinkedIn</a> or 
+                follow me on <a href="https://github.com/twinzies" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">GitHub</a>.
               </p>
-            </div>
-
-            {/* Social Links */}
-            <div className="flex space-x-4 mb-8">
-              <a 
-                href="https://github.com/twinzies" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg transition-colors"
-              >
-                <Github className="w-5 h-5" />
-                <span>GitHub</span>
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/girlenginerd/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span>LinkedIn</span>
-              </a>
             </div>
           </div>
         </div>
