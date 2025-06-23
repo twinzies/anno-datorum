@@ -1,5 +1,5 @@
 
-import { Calendar, Clock } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 interface BlogCardProps {
   title: string;
@@ -12,16 +12,12 @@ interface BlogCardProps {
 const BlogCard = ({ title, excerpt, date, readTime, featured = false }: BlogCardProps) => {
   return (
     <article className={`group cursor-pointer ${featured ? 'md:col-span-2' : ''}`}>
-      <div className="bg-gray-900 border border-gray-700 rounded-lg overflow-hidden hover:border-gray-600 transition-all duration-300 hover:shadow-lg">
+      <div className="bg-gray-800 border border-gray-600 rounded-lg overflow-hidden hover:border-gray-500 transition-all duration-300 hover:shadow-lg">
         <div className={`p-6 ${featured ? 'md:p-8' : ''}`}>
-          <div className="flex items-center space-x-4 text-sm text-gray-400 mb-3">
-            <div className="flex items-center space-x-1">
+          <div className="flex items-center mb-3">
+            <div className="flex items-center space-x-1 text-sm text-olive-500">
               <Calendar className="h-4 w-4" />
-              <span>{date}</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <Clock className="h-4 w-4" />
-              <span>{readTime}</span>
+              <span className="text-olive-600 font-medium">{date}</span>
             </div>
           </div>
           
