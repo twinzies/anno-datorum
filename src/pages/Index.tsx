@@ -57,15 +57,15 @@ const Index = () => {
   const regularPosts = blogPosts.slice(1);
 
   return (
-    <div className="min-h-screen bg-gray-50 font-inter">
+    <div className="min-h-screen bg-black text-white font-inter">
       <Header />
       
       <main className="max-w-6xl mx-auto px-6 py-12">
         {/* Featured Post */}
         <section className="mb-16">
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Featured Article</h2>
-            <div className="w-16 h-1 bg-black"></div>
+            <h2 className="text-2xl font-bold text-white mb-2">Featured Article</h2>
+            <div className="w-16 h-1 bg-white"></div>
           </div>
           <BlogCard {...featuredPost} />
         </section>
@@ -73,8 +73,8 @@ const Index = () => {
         {/* Recent Posts */}
         <section>
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Recent Posts</h2>
-            <div className="w-16 h-1 bg-black"></div>
+            <h2 className="text-2xl font-bold text-white mb-2">Recent Posts</h2>
+            <div className="w-16 h-1 bg-white"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -85,18 +85,18 @@ const Index = () => {
         </section>
 
         {/* Newsletter Signup */}
-        <section className="mt-20 bg-white border border-gray-200 rounded-lg p-8 md:p-12 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Stay Updated</h3>
-          <p className="text-gray-600 mb-6 max-w-md mx-auto">
+        <section className="mt-20 bg-gray-900 border border-gray-700 rounded-lg p-8 md:p-12 text-center">
+          <h3 className="text-2xl font-bold text-white mb-4">Stay Updated</h3>
+          <p className="text-gray-300 mb-6 max-w-md mx-auto">
             Subscribe to receive new posts and updates directly in your inbox.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input 
               type="email" 
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+              className="flex-1 px-4 py-3 border border-gray-600 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent placeholder-gray-400"
             />
-            <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-medium">
+            <button className="px-6 py-3 bg-white text-black rounded-lg hover:bg-gray-200 transition-colors font-medium">
               Subscribe
             </button>
           </div>
@@ -104,13 +104,13 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 mt-20">
+      <footer className="bg-gray-900 border-t border-gray-700 mt-20">
         <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <span className="text-lg font-bold text-black">Annodatorum</span>
+              <span className="text-lg font-bold text-white">Annodatorum</span>
             </div>
-            <div className="text-gray-600 text-sm">
+            <div className="text-gray-400 text-sm">
               © 2024 Annodatorum. All rights reserved.
             </div>
           </div>
