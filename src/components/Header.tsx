@@ -1,30 +1,34 @@
 
 const Header = () => {
-  return <div className="pt-6">
-      <header className="w-full bg-stone-100 border border-gray-300 shadow-sm">
-        <div className="max-w-full py-0 px-[7px] mx-[77px]">
-          <div className="flex flex-col">
-            <div className="flex items-start space-x-6 mb-4">
+  return (
+    <div className="pt-6">
+      <header className="w-full bg-gray-900 border border-gray-700 shadow-lg">
+        <div className="max-w-6xl mx-auto px-6 py-6">
+          <div className="flex flex-col space-y-4">
+            <div className="flex items-start space-x-6">
               <div className="flex flex-col">
-                <h1 className="font-bold text-black font-inter my-[8px] text-5xl">Anno 
-Datorum</h1>
+                <h1 className="font-bold text-white font-inter text-4xl md:text-5xl">
+                  Anno Datorum
+                </h1>
               </div>
-              <div className="rounded-lg p-3 mt-1 bg-stone-100">
-                <p className="text-sm leading-relaxed whitespace-nowrap text-red-600">Modeling the collective experience in the era of information with AI</p>
+              <div className="rounded-lg p-3 bg-gray-800 border border-gray-600">
+                <p className="text-sm leading-relaxed text-red-400">
+                  Modeling the collective experience in the era of information with AI
+                </p>
               </div>
             </div>
             <nav className="flex justify-center">
-              <div className="flex space-x-8 justify-center mx-0 my-[2px] py-[2px] px-[115px]">
-                <a href="/" className="text-gray-700 hover:text-black transition-colors font-medium text-xl">
+              <div className="flex space-x-8 py-2">
+                <a href="/" className="text-gray-300 hover:text-white transition-colors font-medium text-lg">
                   Home
                 </a>
-                <a href="/about" className="text-gray-700 hover:text-black transition-colors font-medium text-xl">
+                <a href="/about" className="text-gray-300 hover:text-white transition-colors font-medium text-lg">
                   About
                 </a>
-                <a href="/archive" className="text-gray-700 hover:text-black transition-colors font-medium text-xl">
+                <a href="/archive" className="text-gray-300 hover:text-white transition-colors font-medium text-lg">
                   Archive
                 </a>
-                <a href="/gallery" className="text-gray-700 hover:text-black transition-colors font-medium text-xl">
+                <a href="/gallery" className="text-gray-300 hover:text-white transition-colors font-medium text-lg">
                   Gallery
                 </a>
               </div>
@@ -32,6 +36,8 @@ Datorum</h1>
           </div>
         </div>
       </header>
-    </div>;
+    </div>
+  );
 };
+
 export default Header;
