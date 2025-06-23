@@ -1,3 +1,4 @@
+
 const Header = () => {
   return <div className="pt-6">
       <header className="w-full bg-stone-100 border border-gray-300 shadow-sm">
@@ -5,11 +6,11 @@ const Header = () => {
           <div className="flex flex-col">
             <div className="flex items-start space-x-6 mb-4">
               <div className="flex flex-col">
-                <h1 className="font-bold text-black font-inter my-[8px] text-5xl">Anno 
+                <h1 className="font-bold text-black font-inter my-[8px] text-5xl">Anno 
 Datorum</h1>
               </div>
-              <div className="rounded-lg p-3 mt-1 bg-inherit">
-                <p className="text-sm leading-relaxed whitespace-nowrap text-red-600">Modeling the collective experience with AI.</p>
+              <div className="rounded-lg p-3 mt-1 bg-stone-100">
+                <p className="text-sm leading-relaxed whitespace-nowrap text-red-600">Modeling the collective experience in the era of information with AI</p>
               </div>
             </div>
             <nav className="flex justify-center">
@@ -22,6 +23,9 @@ Datorum</h1>
                 </a>
                 <a href="/archive" className="text-gray-700 hover:text-black transition-colors font-medium text-xl">
                   Archive
+                </a>
+                <a href="/gallery" className="text-gray-700 hover:text-black transition-colors font-medium text-xl">
+                  Gallery
                 </a>
               </div>
             </nav>

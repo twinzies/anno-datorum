@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Archive from "./pages/Archive";
+import PhotoGallery from "./pages/PhotoGallery";
 import NotFound from "./pages/NotFound";
 import TheArtOfProfessionalBlogging from "./pages/posts/2024-12-20-the-art-of-professional-blogging";
 import MinimalistDesignPrinciples from "./pages/posts/2024-12-18-minimalist-design-principles";
