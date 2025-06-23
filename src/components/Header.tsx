@@ -1,3 +1,4 @@
+
 const Header = () => {
   return <div className="pt-6">
       <header className="w-full bg-gray-900 border border-gray-700 shadow-lg">
@@ -17,16 +18,16 @@ const Header = () => {
             </div>
             <nav className="flex justify-center">
               <div className="flex space-x-8 py-2 bg-transparent">
-                <a href="/" className="text-gray-300 hover:text-white transition-colors font-medium text-lg">
+                <a href="/" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
                   Home
                 </a>
-                <a href="/about" className="text-gray-300 hover:text-white transition-colors font-medium text-lg">
+                <a href="/about" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
                   About
                 </a>
-                <a href="/archive" className="text-gray-300 hover:text-white transition-colors font-medium text-lg">
+                <a href="/archive" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
                   Archive
                 </a>
-                <a href="/gallery" className="text-gray-300 hover:text-white transition-colors font-medium text-lg">
+                <a href="/gallery" className="text-black hover:text-red-500 transition-colors font-medium text-lg">
                   Gallery
                 </a>
               </div>
