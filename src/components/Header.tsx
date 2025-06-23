@@ -13,7 +13,7 @@ const Header = () => {
                   Anno Datorum
                 </h1>
               </div>
-              <div className="bg-gray-50 rounded-lg p-3 mt-1">
+              <div className="bg-stone-100 rounded-lg p-3 mt-1">
                 <p className="text-gray-700 text-sm leading-relaxed whitespace-nowrap">
                   Modeling the collective experience in the era of information with AI
                 </p>
