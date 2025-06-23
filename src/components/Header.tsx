@@ -1,7 +1,8 @@
+
 import { Link } from "react-router-dom";
 const Header = () => {
   return <div className="pt-6">
-      <header className="w-full border border-gray-700 shadow-lg bg-transparent">
+      <header className="w-full shadow-lg bg-transparent">
         <div className="max-w-6xl mx-auto px-6 py-6 bg-transparent">
           <div className="flex flex-col space-y-4">
             <div className="flex items-start space-x-6">
